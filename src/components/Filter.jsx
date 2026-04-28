@@ -1,15 +1,14 @@
+import { useDispatch } from "react-redux"
+import { findContact } from "../redux/find/findSlice"
 
 export const Filter = () => {
 
-    // filterNames = () => {
-    //     const inputFilter = document.querySelector("#filterInput")
-    //     const inputValue = inputFilter.value
-    //     this.props.filterData(inputValue)
-    // }
+    const dispatch = useDispatch()
+    
     return (
         <div>
             <p>Find contacts by name</p>
-            <input id="filterInput" type="text" />
+            <input onInput={(e) => dispatch(findContact(e.target.value))} id="filterInput" type="text" />
         </div>
     )
 }

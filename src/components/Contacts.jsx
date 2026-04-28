@@ -1,4 +1,4 @@
-import { getContacts } from '../redux/contacts/contactsSelectors'
+import { getFind } from '../redux/find/findSelectors'
 import contactsImg from '../img/noContactsYet.jpg'
 import { useSelector, useDispatch } from 'react-redux'
 import { removeContact } from '../redux/contacts/contactsSlice'
@@ -6,7 +6,7 @@ import { removeContact } from '../redux/contacts/contactsSlice'
 export const Contacts = () => {
     const dispatch = useDispatch()
 
-    const contacts = useSelector(getContacts)
+    const contacts = useSelector(getFind)
     return (
         <div>
             <h2>Contacts</h2>
