@@ -19,64 +19,6 @@ const Div = styled.div`
 `;
 
 export const App = () => {
-  // state = {
-  //   contacts: [],
-  //   filter: "",
-  //   name: "",
-  //   number: "",
-  // };
-
-  // inputData = (name, number) => {
-  //   const nameUpper = name.toUpperCase();
-  //   const numberUpper = number;
-
-  //   const nameExist = this.state.contacts.some((contact) => {
-  //     return contact.name.toUpperCase() === nameUpper;
-  //   });
-
-  //   const numberExist = this.state.contacts.some((contact) => {
-  //     return contact.number === numberUpper;
-  //   });
-
-  //   if (nameExist) {
-  //     alert(`${name} is already in contacts!`);
-  //     return;
-  //   }
-
-  //   if (numberExist) {
-  //     alert(`${numberUpper} is already exist!`);
-  //     return;
-  //   }
-
-  //   const objectValue = {
-  //     name: name,
-  //     number: number,
-  //     id: nanoid(),
-  //   };
-
-  //   this.setState(
-  //     (prevState) => ({
-  //       contacts: [...prevState.contacts, objectValue],
-  //     }),
-  //     () => {
-  //       console.log(this.state);
-  //     }
-  //   );
-  //   // console.log(this.state);
-  // };
-
-  // deleteData = (id) => {
-  //   this.setState((prevState) => ({
-  //     contacts: prevState.contacts.filter(contact => contact.id !== id)
-  //   }));
-  // };
-
-  // filterData = (value) => {
-  //   this.setState({
-  //     filter: value,
-  //   });
-  // };
-
   return (
     <Div className="App">
       <Title>
