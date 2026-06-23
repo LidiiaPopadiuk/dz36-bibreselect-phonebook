@@ -1,7 +1,8 @@
 import { getFind } from '../redux/find/findSelectors'
 import contactsImg from '../img/noContactsYet.jpg'
 import { useSelector, useDispatch } from 'react-redux'
-import { removeContact } from '../redux/contacts/contactsSlice'
+// import { removeContact } from '../redux/contacts/contactsSlice'
+import { deleteContact } from '../redux/contacts/contactsOperation'
 import styled from 'styled-components'
 
 const Button = styled.button`
@@ -23,7 +24,7 @@ export const Contacts = () => {
             ) : (
                 <ul>
                     {contacts.map(contact => {
-                        return <li key={contact.id}>{contact.name}: {contact.number} <Button id={contact.id} onClick={() => dispatch(removeContact(contact.id))}>Delete</Button></li>
+                        return <li key={contact.id}>{contact.name}<span style={{ marginRight: "20px" }}>:</span>{contact.number} <Button id={contact.id} onClick={() => dispatch(deleteContact(contact.id))}>Delete</Button></li>
                     })}
                 </ul>
             )}

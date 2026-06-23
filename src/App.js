@@ -2,6 +2,9 @@ import { Form } from "./components/Form";
 import { Contacts } from "./components/Contacts";
 import { Filter } from "./components/Filter";
 import styled from "styled-components";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { fetchContacts } from "./redux/contacts/contactsOperation";
 
 const Title = styled.h2`
   margin-bottom: 20px;
@@ -19,6 +22,11 @@ const Div = styled.div`
 `;
 
 export const App = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, []);
+
   return (
     <Div className="App">
       <Title>
@@ -27,9 +35,9 @@ export const App = () => {
           Зроблено з любов'ю!
         </span>
       </Title>
-      <Form/>
-      <Filter/>
-      <Contacts/>
+      <Form />
+      <Filter />
+      <Contacts />
     </Div>
   );
 };
