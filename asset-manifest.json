@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/dz34-asyncAcrtions-phonebook/static/css/main.b8fd0ee9.css",
-    "main.js": "/dz34-asyncAcrtions-phonebook/static/js/main.311c0603.js",
-    "static/media/noContactsYet.jpg": "/dz34-asyncAcrtions-phonebook/static/media/noContactsYet.984719bde3449d0091cf.jpg",
-    "index.html": "/dz34-asyncAcrtions-phonebook/index.html",
-    "main.b8fd0ee9.css.map": "/dz34-asyncAcrtions-phonebook/static/css/main.b8fd0ee9.css.map",
-    "main.311c0603.js.map": "/dz34-asyncAcrtions-phonebook/static/js/main.311c0603.js.map"
+    "main.css": "/dz36-bibreselect-phonebook/static/css/main.72eaedb4.css",
+    "main.js": "/dz36-bibreselect-phonebook/static/js/main.e6848422.js",
+    "static/media/noContactsYet.jpg": "/dz36-bibreselect-phonebook/static/media/noContactsYet.984719bde3449d0091cf.jpg",
+    "index.html": "/dz36-bibreselect-phonebook/index.html",
+    "main.72eaedb4.css.map": "/dz36-bibreselect-phonebook/static/css/main.72eaedb4.css.map",
+    "main.e6848422.js.map": "/dz36-bibreselect-phonebook/static/js/main.e6848422.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8fd0ee9.css",
-    "static/js/main.311c0603.js"
+    "static/css/main.72eaedb4.css",
+    "static/js/main.e6848422.js"
   ]
 }
