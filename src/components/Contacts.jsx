@@ -1,4 +1,4 @@
-import { getFind } from '../redux/find/findSelectors'
+import { selectFilter } from '../redux/find/findSelectors'
 import contactsImg from '../img/noContactsYet.jpg'
 import { useSelector, useDispatch } from 'react-redux'
 // import { removeContact } from '../redux/contacts/contactsSlice'
@@ -12,7 +12,9 @@ background-color: "rgb(255, 214, 220)"
 export const Contacts = () => {
     const dispatch = useDispatch()
 
-    const contacts = useSelector(getFind)
+    const contacts = useSelector(selectFilter)
+    console.log("contacts", contacts);
+    
     return (
         <div>
             <h2>Contacts</h2>
