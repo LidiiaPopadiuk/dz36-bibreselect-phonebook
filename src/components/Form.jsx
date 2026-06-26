@@ -3,11 +3,14 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addContact } from '../redux/contacts/contactsOperation'
 import { getContacts } from '../redux/contacts/contactsSelectors'
 import x from './Form.module.css'
+import { selectAll } from '../redux/contacts/contactsSlice'
 
 
 export const Form = () => {
     const dispatch = useDispatch()
-    const contacts = useSelector(getContacts)
+    const contacts = useSelector(selectAll)
+    console.log(contacts);
+    
 
     const inputsData = (e) => {
         e.preventDefault()

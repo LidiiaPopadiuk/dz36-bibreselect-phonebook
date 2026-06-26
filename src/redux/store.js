@@ -23,7 +23,7 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
   contacts: contactsReducer,
-  // find: findReducer,
+  find: findReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
